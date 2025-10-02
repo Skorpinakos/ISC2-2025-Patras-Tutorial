@@ -266,9 +266,9 @@ def plot_all(real_ents: List[dict], forecast_ents: List[dict], attrs: List[str])
 # ---- Real (historical) fetch -------------------------------------------------
 HIST_BASE_URL = "http://labserver.sense-campus.gr:9090/ngsi-ld/v1/temporal/entities"
 HIST_TYPE = "AirQualityObserved"
-#HIST_TYPE = "CrowdFlowObserved"
+HIST_TYPE = "CrowdFlowObserved"
 HIST_TIMEREL = "between"
-HIST_TIME = "2025-09-10T00:00:00Z"
+HIST_TIME = "2025-09-29T00:00:00Z"
 HIST_END_TIME = "2025-10-01T03:00:00Z"
 HIST_LIMIT = None  # e.g., 1000 (stringified if not None)
 

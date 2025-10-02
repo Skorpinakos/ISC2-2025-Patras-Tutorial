@@ -1,0 +1,5 @@
+    "urn:ngsi-ld:ice-ht:Patras:101609",
+    "urn:ngsi-ld:ice-ht:Patras:101589",
+    "urn:ngsi-ld:ice-ht:Patras:1566",
+    "urn:ngsi-ld:patras:estia:crowd:waitingarea",
+    "urn:ngsi-ld:patras:estia:crowd:restaurant"

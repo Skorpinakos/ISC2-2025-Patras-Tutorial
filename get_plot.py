@@ -9,15 +9,16 @@ import matplotlib.pyplot as plt
 # ---------------- Hardcoded query parameters (edit these) ----------------
 BASE_URL = "http://labserver.sense-campus.gr:9090/ngsi-ld/v1/temporal/entities"
 TYPE = "AirQualityObserved"
+TYPE = "CrowdFlowObserved"
 TIMEREL = "between"
-TIME = "2025-09-15T00:00:00Z"
-END_TIME = "2025-10-01T12:00:00Z"
+TIME = "2025-09-29T00:00:00Z"
+END_TIME = "2025-10-02T12:00:00Z"
 LIMIT = None 
 
 
 
 # ---------------- Filtering options (after fetch) ----------------
-INCLUDE_IDS = {                                                          #we keep some of the entities to avoid clutter and non consistent stations
+INCLUDE_IDS = {                                                                                   #we keep some of the entities to avoid clutter and non consistent stations
     "urn:ngsi-ld:ice-ht:Patras:101609",
     "urn:ngsi-ld:ice-ht:Patras:101589",
     "urn:ngsi-ld:ice-ht:Patras:1566",
@@ -26,7 +27,7 @@ INCLUDE_IDS = {                                                          #we kee
 }
 # Keep only these attribute names (by simple tail name). Empty set -> keep all.
 
-KEEP_ATTRS = {"pm25","temperature","relativeHumidity"}
+KEEP_ATTRS = {"pm25","temperature","relativeHumidity","peopleCount"}
 
 # ---------------- Helpers ----------------
 META = {"id", "type", "@context", "dateObserved"}

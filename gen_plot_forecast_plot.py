@@ -28,7 +28,7 @@ payload = generate_ngsi_payload(
             "https://example.org/Temperature": {"median": 28.5, "amplitude": 5.0, "noise": 1.6},
         },
     },
-    start_iso="2025-09-01T00:00:00Z",
+    start_iso="2025-09-25T00:00:00Z",
     end_iso="2025-10-05T00:00:00Z",
     seconds_per_sample=30*60,
     seed=1066
@@ -40,9 +40,9 @@ META = {"id","type","@context","dateObserved"}
 headers = {"Content-Type": "application/json", "X-API-KEY": APIK}
 params  = {
     "timerel":"between",
-    "time":"2025-10-06T14:00:00Z",
-    "endTime":"2025-10-14T18:00:00Z",
-    "interval_seconds":30*60
+    "time":"2025-10-05T00:00:00Z",
+    "endTime":"2025-10-08T18:00:00Z",
+    "interval_seconds":3*60*60
 }
 
 # --- Helpers ------------------------------------------------------------------
