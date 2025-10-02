@@ -1,0 +1,4 @@
+http://labserver.sense-campus.gr:9090/ngsi-ld/v1/temporal/entities?type=AirQualityObserved&timerel=between&time=2025-01-13T00%3A00%3A00Z&endTime=2025-09-25T12%3A00%3A00Z
+http://labserver.sense-campus.gr:9090/ngsi-ld/v1/temporal/entities?type=CrowdFlowObserved&timerel=between&time=2025-01-13T00%3A00%3A00Z&endTime=2025-09-25T12%3A00%3A00Z
+http://labserver.sense-campus.gr:9090/ngsi-ld/v1/entities?type=CrowdFlowObserved
+http://labserver.sense-campus.gr:9090/ngsi-ld/v1/entities?type=AirQualityObserved
